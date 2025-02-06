@@ -1,0 +1,26 @@
+public class Book {
+    // Fields
+    String title;
+    String author;
+    double price;
+
+    // Constructor
+    public Book(String title, String author, double price) {
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }
+
+    // Method to return book info
+    public String getBookInfo() {
+        return "Title: " + this.title + ", Author: " + this.author + ", Price: $" + this.price;
+    }
+
+    public static void main(String[] args) {
+        // Create a Book object
+        Book myBook = new Book("Java Programming", "John Doe", 29.99);
+
+        // Print book info
+        System.out.println(myBook.getBookInfo());
+    }
+}
